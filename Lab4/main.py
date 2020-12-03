@@ -30,7 +30,7 @@ def set_max_object_length(parameters, objects, maxWidths):
 
 def draw_header(objects, maxWidths, getStartLength = False):
     return_str = ''
-    numberPart = '|' + ('%' + str(maxWidths['NUMBER']) + 's') % "№|"
+    numberPart = '|' + ('%' + str(maxWidths['NUMBER']) + 's') % "#"
     parameterPart = ('%' + str(maxWidths['PARAMETER']) + 's') % "Parameter"
     coefficientPart = ('%' + str(maxWidths['COEFFICIENT']) + 's') % "Coefficient"
     objectsPart = ''

@@ -21,12 +21,9 @@ def open_file():
 [file, years] = open_file()
 lines = []
 benefits = []
-
 for line in file:
     if (not (line and not line.isspace()) or len(lines) >= 3): continue
-
     lines.append(re.split(';', re.sub('\n', '', line)))
-
 if len(lines) != 3: 
     print("Must be 3 lines!")
     exit()
